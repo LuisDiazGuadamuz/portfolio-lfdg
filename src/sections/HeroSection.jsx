@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FiArrowRight, FiGithub, FiLinkedin } from 'react-icons/fi'
 import { HiOutlineArrowDownTray } from 'react-icons/hi2'
-import lfdgLogo from '../assets/lfdg-logo.png'
+import lfdgLogo from '../assets/lfdg-logo.webp'
 
 function HeroSection() {
   const cvFile = '/Luis_Felipe_Diaz_Guadamuz_CV.pdf'
@@ -59,9 +59,11 @@ function HeroSection() {
 
           <div className="mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
             <a
-              href="#"
+              href="https://github.com/LuisDiazGuadamuz"
+              target="_blank"
+              rel="noopener noreferrer"
               className={socialButtonClass}
-              aria-label="Perfil de GitHub (pendiente de configurar)"
+              aria-label="Abrir perfil de GitHub de Luis Felipe Diaz Guadamuz"
             >
               <FiGithub />
               GitHub
