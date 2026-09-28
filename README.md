@@ -31,9 +31,12 @@ Este portafolio fue desarrollado completamente desde cero para ser usado como pr
 - CV descargable directamente desde la página
 - Sección de experiencia/formación tipo timeline
 - Contacto con correo, GitHub, LinkedIn y WhatsApp reales
-- SEO básico configurado (título, meta description, favicon, idioma)
+- SEO completo: Open Graph, Twitter Cards, datos estructurados (JSON-LD), `robots.txt` y meta tags de idioma/tema
+- Cabeceras de seguridad HTTP (CSP, HSTS, X-Frame-Options, Referrer-Policy, Permissions-Policy) vía `vercel.json`
 - Diseño 100% responsive (desktop, tablet y móvil)
 - Menú hamburguesa funcional en móvil
+- Enlace de accesibilidad "saltar al contenido" para navegación por teclado
+- Activos optimizados (logo en WebP, imágenes comprimidas) para carga rápida
 - Preparado para despliegue en Vercel
 
 ---
@@ -74,7 +77,9 @@ Este portafolio fue desarrollado completamente desde cero para ser usado como pr
 ```
 portafolio-de-cv/
 ├── public/
-│   ├── lfdg-logo.png                      # Logo para favicon
+│   ├── lfdg-logo.png                      # Favicon optimizado
+│   ├── og-image.jpg                       # Imagen para Open Graph / Twitter Cards
+│   ├── robots.txt                         # Directivas para crawlers
 │   ├── Luis_Felipe_Diaz_Guadamuz_CV.pdf   # CV descargable
 │   └── Imagenes de Proyecto Portafolio/
 │       ├── RealStatePWA/                  # Imágenes Samara Rentals
@@ -83,7 +88,7 @@ portafolio-de-cv/
 │       └── Flujo de Caja/                 # Imágenes sistema escritorio
 ├── src/
 │   ├── assets/
-│   │   └── lfdg-logo.png                  # Logo en Hero y Navbar
+│   │   └── lfdg-logo.webp                 # Logo en Hero y Navbar (optimizado)
 │   ├── components/
 │   │   ├── Navbar.jsx                     # Navegación sticky con menú móvil
 │   │   ├── ProjectCard.jsx                # Tarjeta con galería y modal fullscreen
@@ -105,7 +110,8 @@ portafolio-de-cv/
 │   ├── App.jsx                            # Composición general de secciones
 │   ├── main.jsx                           # Punto de entrada React
 │   └── index.css                          # Tailwind, fuentes y estilos globales
-├── index.html                             # Documento HTML con SEO y favicon
+├── index.html                             # Documento HTML con SEO, Open Graph y JSON-LD
+├── vercel.json                            # Cabeceras de seguridad HTTP para el deploy
 ├── vite.config.js                         # Configuración de Vite + Tailwind
 ├── package.json
 └── .oxlintrc.json
@@ -189,8 +195,9 @@ El proyecto estará disponible en `http://localhost:5173`.
 
 | Archivo | Ubicación | Uso |
 |---|---|---|
-| Logo LFDG | `src/assets/lfdg-logo.png` | Navbar y Hero |
+| Logo LFDG | `src/assets/lfdg-logo.webp` | Navbar y Hero |
 | Favicon | `public/lfdg-logo.png` | Pestaña del navegador |
+| Imagen Open Graph | `public/og-image.jpg` | Previsualización al compartir en redes/WhatsApp |
 | CV | `public/Luis_Felipe_Diaz_Guadamuz_CV.pdf` | Botón Descargar CV |
 | Imágenes de proyectos | `public/Imagenes de Proyecto Portafolio/` | Galería en tarjetas |
 
@@ -217,6 +224,8 @@ npm run preview
 5. Publicar.
 
 > Los archivos en `public/` (CV, imágenes de proyectos, logo) se incluyen automáticamente en el deploy y son accesibles desde la raíz del sitio.
+
+El archivo `vercel.json` aplica automáticamente cabeceras de seguridad HTTP (Content-Security-Policy, Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, Referrer-Policy y Permissions-Policy) a todas las rutas del sitio desplegado.
 
 ---
 

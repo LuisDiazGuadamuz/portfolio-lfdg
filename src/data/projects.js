@@ -19,7 +19,7 @@ const projects = [
       'PWA',
     ],
     role:
-      'Desarrollo frontend y backend, integracion GraphQL, autenticacion, panel administrativo, manejo de imagenes, despliegue y configuracion PWA.',
+      'Desarrollo frontend y backend, integración GraphQL, autenticación, panel administrativo, manejo de imágenes, despliegue y configuración PWA.',
     imageUrl: '/Imagenes de Proyecto Portafolio/RealStatePWA/Catalogo.png',
     images: [
       '/Imagenes de Proyecto Portafolio/RealStatePWA/Caracteristicas de Casas.png',
@@ -29,7 +29,7 @@ const projects = [
       '/Imagenes de Proyecto Portafolio/RealStatePWA/Home.png',
       '/Imagenes de Proyecto Portafolio/RealStatePWA/Panel de Administrador.png',
     ],
-    imageAlt: 'Vista del catalogo de propiedades de Samara Rentals',
+    imageAlt: 'Vista del catálogo de propiedades de Samara Rentals',
     demoUrl: '#',
     repos: [
       {
@@ -60,7 +60,7 @@ const projects = [
       'MVVM',
     ],
     role:
-      'Diseño de interfaz, estructura Android, persistencia local con Room/SQLite y logica de gestion de potreros.',
+      'Diseño de interfaz, estructura Android, persistencia local con Room/SQLite y lógica de gestión de potreros.',
     imageUrl: '/Imagenes de Proyecto Portafolio/RotacionPotreros/Pantalla principal.jpeg',
     images: [
       '/Imagenes de Proyecto Portafolio/RotacionPotreros/Agegacion de nuevo Potrero.jpeg',
@@ -68,7 +68,7 @@ const projects = [
       '/Imagenes de Proyecto Portafolio/RotacionPotreros/Pantalla principal.jpeg',
       '/Imagenes de Proyecto Portafolio/RotacionPotreros/Reporte de Tiempos de Recuperacion.jpeg',
     ],
-    imageAlt: 'Pantalla principal de la app Rotacion de Potreros',
+    imageAlt: 'Pantalla principal de la app Rotación de Potreros',
     demoUrl: '#',
     repoUrl: 'https://github.com/LuisDiazGuadamuz/RotacionPotrerosAppMovil.git',
   },
@@ -81,7 +81,7 @@ const projects = [
       'Proyecto orientado a la gestión de funcionalidades relacionadas con restaurante, menu, pedidos y administración de información dentro del sistema.',
     stack: ['Android Studio', 'Java/Kotlin', 'SQLite', 'XML Views', 'RecyclerView'],
     role:
-      'Participación en el desarrollo de funcionalidades asignadas, revision de pantallas, logica y estructura de datos del proyecto.',
+      'Participación en el desarrollo de funcionalidades asignadas, revisión de pantallas, lógica y estructura de datos del proyecto.',
     imageUrl: '/Imagenes de Proyecto Portafolio/ExpressFood/Login.jpeg',
     images: [
       '/Imagenes de Proyecto Portafolio/ExpressFood/Administracion de Pedidos.jpeg',
@@ -92,7 +92,7 @@ const projects = [
       '/Imagenes de Proyecto Portafolio/ExpressFood/Menu.jpeg',
       '/Imagenes de Proyecto Portafolio/ExpressFood/Panel Admin.jpeg',
     ],
-    imageAlt: 'Pantalla de inicio de sesion del proyecto ExpressFood',
+    imageAlt: 'Pantalla de inicio de sesión del proyecto ExpressFood',
     demoUrl: '#',
     repoUrl: 'https://github.com/LuisDiazGuadamuz/ExpressFoodAppMovil.git',
   },
@@ -105,7 +105,7 @@ const projects = [
       'Sistema desarrollado para apoyar la gestión de flujo de caja, facturación, reportes y control financiero de una empresa, incluyendo funcionalidades orientadas a procesos administrativos.',
     stack: ['Java', 'JavaFX/Swing', 'MySQL/SQL Server', 'Reportes', 'Logica de negocio'],
     role:
-      'Desarrollo de modulos funcionales, manejo de datos, reportes y apoyo en procesos de facturación y control financiero.',
+      'Desarrollo de módulos funcionales, manejo de datos, reportes y apoyo en procesos de facturación y control financiero.',
     imageUrl: '/Imagenes de Proyecto Portafolio/Flujo de Caja/Login.png',
     images: [
       '/Imagenes de Proyecto Portafolio/Flujo de Caja/Facturas de Casas.png',
@@ -113,7 +113,7 @@ const projects = [
       '/Imagenes de Proyecto Portafolio/Flujo de Caja/Login.png',
       '/Imagenes de Proyecto Portafolio/Flujo de Caja/Pantalla Principal.png',
     ],
-    imageAlt: 'Pantalla de inicio de sesion del sistema Flujo de Caja',
+    imageAlt: 'Pantalla de inicio de sesión del sistema Flujo de Caja',
     demoUrl: '#',
     repoUrl: 'https://github.com/LuisDiazGuadamuz/FlujodeCaja.git',
   },

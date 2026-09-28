@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { HiOutlineArrowDownTray } from 'react-icons/hi2'
-import lfdgLogo from '../assets/lfdg-logo.png'
+import lfdgLogo from '../assets/lfdg-logo.webp'
 
 const navItems = [
   { label: 'Inicio', href: '#hero' },

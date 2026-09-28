@@ -224,7 +224,7 @@ function ProjectCard({ project }) {
           onClick={closeModal}
           role="dialog"
           aria-modal="true"
-          aria-label={`Galeria de imagenes de ${project.title}`}
+          aria-label={`Galería de imágenes de ${project.title}`}
         >
           <div className="relative mx-auto flex h-full w-full max-w-[90vw] items-center justify-center">
             <button

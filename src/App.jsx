@@ -11,8 +11,14 @@ function App() {
   return (
     <div className="relative overflow-hidden bg-[#0A0A0A] text-[#FAFAFA]">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_18%,rgba(212,175,55,0.12),transparent_28%),radial-gradient(circle_at_84%_14%,rgba(234,179,8,0.08),transparent_24%)]" />
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:border focus:border-[#D4AF37]/45 focus:bg-[#111111] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#EAB308]"
+      >
+        Saltar al contenido principal
+      </a>
       <Navbar />
-      <main>
+      <main id="main-content">
         <HeroSection />
         <AboutSection />
         <SkillsSection />
